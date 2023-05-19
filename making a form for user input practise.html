@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="making a form for user input practise.css"
+</head>
+
+    <style>
+
+        #userName:focus{background-color:
+            rgb(201, 210, 255);
+            
+        }
+
+        #userAge:focus{background-color:
+            rgb(201, 210, 255);
+        }
+        
+
+        #userDOB:focus{background-color:
+            rgb(201, 210, 255);
+        }
+           
+        #userCountry:focus{background-color:
+            rgb(201, 210, 255);
+        }
+            
+        #userFunfact:focus{background-color:
+            rgb(201, 210, 255);
+        }
+           
+
+    </style>
+
+
+
+
+<body>
+    
+        <div class="title">
+
+        <p><center>FILLABLE FORM USING JAVASCRIPT:></center></p>
+
+        </div>
+
+        <div class="small-note">
+
+        <p><h5>ps..this is my first javascript project,
+             and it's also my fist time using all three 
+            languages together:) (html,css and js)
+        </h5></p>
+
+        <p><h5>this mini project took me from 12/05/23
+            to 19/05/23 to fully complete.
+        </h5></p>
+
+        <p><h5>hope yu like it:)</h5></p>
+        
+        </div>
+        
+
+    <div class="paragraphs" id="para1">
+
+    <p><b> hi guys, so on this page we'll be focusing on how to collect
+         user input and display a response on the web-page
+        using the wonderful language called JaVa oF thE sCrIpT:).</b></p>
+
+    </div>
+
+    <div class="paragraphs" id="para2">
+
+    <p><h4><center>Enjoy the interactive experience<3</center></h4></p>
+
+    </div>
+
+
+    <div class="name">
+
+   <center> <label><b>Please enter your name: </b></label> </center>
+
+   </div>
+
+    <br>
+    
+    <center>
+
+    <input type="text" id="userName">
+    
+    <br>
+    <br>
+    
+    <button onclick="displayName()"><i>submit here:P</i></button>
+
+    <h3 id="message1"></h3>
+
+    </center>
+
+
+<br>
+<br>
+<hr color="blue">
+<br>
+
+    <div class="age">
+
+ <center> <label><b>Please enter your age : </b></label></center>
+
+    </div>
+
+    <center>
+    <br>
+
+    <input type="number" id="userAge">
+
+    <br>
+    <br>
+
+  <button onclick="displayAge()"><i>submit here:p</i></button> 
+
+   <h3 id="message2"></h3>
+
+   </center>
+
+    
+
+<br>
+<br>
+<hr color="blue">
+<br>
+
+   <div class="DOB">
+
+   <center> <label><b>Please enter your date of birth: </b></label></center>
+
+   </div>
+
+   <center>
+    <br>
+
+    <input type="date" id="userDOB">
+
+    <br>
+    <br>
+
+    <button onclick="displayDOB()"><i>submit here:p</i></button> 
+
+    <h3 id=message3></h3>
+
+    </center>
+
+<br>
+<br>
+<hr color="blue">
+<br>
+    
+    <div class="country">
+
+    <center><label><b>Please enter your country of origin/region: </b></label></center>
+
+        </div>
+
+        <center>
+        <br>
+
+        <input type="text" id="userCountry">
+
+        <br>
+        <br>
+
+        <button onclick="displayCountry()"><i>submit here:p</i></button>
+
+        <h3 id="message4"></h3>
+    
+    </center>
+
+<br>
+<br>
+<hr color="blue">
+<br>
+
+        <div class="fun-fact">
+
+       <center><label><i><b>What's a fun little fact about yourself?</b></i></label></center>
+
+       </div>
+       
+       <center>
+        <br>
+
+        <input type="text" id="userFunfact">
+
+        <br>
+        <br>
+
+        <button onclick="displayFunfact()"><i>submit here:p</i></button>
+
+        <h3 id="message5"></h3>
+    </center>
+
+
+    <script>
+
+        function displayName(){
+            let userName=document.querySelector("#userName");
+            let message1 =document.querySelector("#message1");
+            
+            message1.innerHTML="hii " + userName.value + ", that's a really nice name:)" 
+        }
+
+        function displayAge(){
+        let userAge=document.querySelector("#userAge");
+        let message2=document.querySelector("#message2");
+
+        message2.innerHTML="You are  " + userAge.value + " years old."
+        }
+
+        function displayDOB(){
+            let userDOB=document.querySelector("#userDOB");
+            let message3=document.querySelector("#message3");
+
+            message3.innerHTML="You were born on " + userDOB.value;
+
+        }
+
+        function displayCountry(){
+            let userCountry=document.querySelector("#userCountry");
+            let message4=document.querySelector("#message4")
+
+            message4.innerHTML= "Your country of origin is " + userCountry.value + "."
+
+        }
+
+        function displayFunfact(){
+            let userFunfact=document.querySelector("#userFunfact");
+            let message5=document.querySelector("#message5");
+
+            message5.innerHTML="woww thats so nice about youu:>"
+
+        }
+    </script>
+
+</body>
+
+</html>
